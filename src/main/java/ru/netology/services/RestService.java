@@ -1,4 +1,5 @@
 package ru.netology.javaqa.javaqamvn.services;
+
 public class RestService {
     public int calculate(int income, int expenses, int treshold) {
         int count = 0; // счётчик месяцев отдыха
@@ -6,9 +7,9 @@ public class RestService {
         for (int month = 0; month < 12; month++) {
             if (money >= treshold) { // можем ли отдыхать?
                 count++; // увеличиваем счётчик месяцев отдыха
-                money = money + income - expenses;
-            } else {
                 money = (money - expenses) / 3;
+            } else {
+                money = money + income - expenses;
             }
         }
         return count;
