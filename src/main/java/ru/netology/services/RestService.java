@@ -1,4 +1,4 @@
-package ru.netology.javaqa.javaqamvn.services;
+package ru.netology.services;
 
 public class RestService {
     public int calculate(int income, int expenses, int treshold) {
